@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Michał Żak 4603</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="heading"><a class="header__link" href="">Michał Żak 4603</a></h1>
+        <p class="sub-heading">gra gramatyczna</p>
+    </header>
+    <main class="main">
+        <div class="game-stats">
+            <div class="time">Czas: <span id="time">5.0</span></div>
+            <div class="lifes-info">Życia:
+                <div class="lifes-container" id="lifes-container"></div>
+            </div>
+            <div class="points_info">
+                <div class="points_current">
+                    Punkty: <span id="points_container">0</span>
+                </div>
+            </div>
+        </div>
+        <div class="start-info" id="start-info">
+            <button class="btn button_play" id="button_play">Start</button>
+            <p class="start-info__paragraph">Wskaż poprawną formę/ pisownię!</p>
+            <p class="start-info__paragraph">Na każdą odpowiedź masz 5 sekund.</p>
+            <p class="start-info__paragraph">Uważaj, masz tylko 3 życia!</p>
+        </div>
+        <div class="answers-container hidden" id="answers"></div>
+        <div>
+            <div class="lvls-container" id="lvls-container"></div>
+            <div class="restart_container">
+                <button class="btn button_restart" id="button_restart">Zacznij od początku</button>
+            </div>
+        </div>
+    </main>
+    <script src="js/alerts.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
